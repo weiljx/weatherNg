@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module(weatherAppName)
+    .module('weather')
     .run(runBlock);
 
   /** @ngInject */

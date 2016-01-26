@@ -11,7 +11,7 @@
     var vm;
     var el;
 
-    beforeEach(module(weatherAppName));
+    beforeEach(module('weather'));
     beforeEach(inject(function($compile, $rootScope) {
 
       el = angular.element('<weather-ng-navbar></weather-ng-navbar>');
