@@ -1,0 +1,45 @@
+<div class="weatherTile">
+    <h4 class="time">{{vm.model.date | date : 'EEEE'}}</h4>
+    <p class="description">{{vm.model.weather[0].description}}</p>
+    <i class="icon owf owf-{{vm.model.weather[0].id}}-{{vm.model.timeOfDay}}" tooltip="{{vm.model.weather[0].description}}"></i>
+    <div class="current">
+        {{vm.model.temp.day | number:0}}
+        <span class="unit">&deg;{{vm.model.units.symbol}}</span>
+    </div>
+    <div class="minMax"> 
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" tooltip="Low" class="min">
+                {{vm.model.temp.min | number:0}} &deg;{{vm.model.units.symbol}}
+            </button>
+            <button type="button" class="btn btn-default" tooltip="High" class="max">                                        
+                {{vm.model.temp.max | number:0}} &deg;{{vm.model.units.symbol}}
+            </button>
+        </div>        
+    </div>    
+    <div class="details hidden-sm hidden-xs">
+        <div class="row pressure">
+            <div class="col-lg-6 hidden-md">
+                <label>Pressure:</label>    
+            </div>
+            <div class="col-lg-6 col-md-12" tooltip="Pressure">
+                {{vm.model.pressure}}
+            </div>
+        </div>
+        <div class="row humid">
+            <div class="col-lg-6 hidden-md">
+                <label>Humidity:</label>    
+            </div>
+            <div class="col-lg-6 col-md-12" tooltip="Humidity">
+                {{vm.model.humidity | number:0}}{{vm.model.units.himidity}}    
+            </div>
+        </div>
+        <div class="row wind">
+            <div class="col-lg-6 hidden-md">
+                <label>Wind:</label>    
+            </div>
+            <div class="col-lg-6 col-md-12" tooltip="Wind">
+                {{vm.model.speed | number:0}} {{vm.model.units.wind}}    
+            </div>
+        </div>
+    </div>
+</div>

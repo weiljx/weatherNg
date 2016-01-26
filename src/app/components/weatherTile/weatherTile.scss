@@ -1,0 +1,65 @@
+$borderColor: #cccccc;
+
+.weeklyWeather {
+    border-top: 1px solid $borderColor;
+}
+.weatherSet {
+    border-right: 1px solid $borderColor;
+    
+    &:last-of-type {
+        border-right: 0;
+    }
+}
+.weatherTile {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    .minMax
+    {
+        margin-bottom: 10px;
+    }
+    
+    .details .row .col-lg-6 
+    {        
+        &:first-of-type {
+            text-align: right;
+        }
+        &:last-of-type {
+            text-align: left;
+        }
+    }
+}
+
+.dailyForcast .panel-body .weatherTile .current {
+    top: -10px;
+}
+@media (min-width: 1200px){
+    .weatherTile .details .row .col-lg-6 
+    {        
+        &:first-of-type {
+            text-align: right !important;
+        }
+        &:last-of-type {
+            text-align: left !important;
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .weatherTile .details .row .col-md-12 {
+        text-align: center !important;
+        cursor: pointer; 
+    }    
+}
+
+@media (max-width: 992px){
+    .weatherSet {
+        border-bottom: 1px solid $borderColor;
+        border-right: 0;
+        
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }    
+}
