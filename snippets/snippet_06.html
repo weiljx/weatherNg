@@ -1,0 +1,65 @@
+<!-- forecast.html -->
+
+<div class="dailyForcast panel">
+    <div class="panel-heading">
+        <h3 class="location panel-title">
+            {{vm.city.name}} <small>(Today)</small>
+        </h3>                
+    </div>
+    <div class="panel-body">                
+        <div class="well well-sm">
+            <div class="row date">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <h4 class="time">{{vm.main.date}}</h4>
+                </div>
+            </div><!-- end .row.date -->
+            <div class="row desc">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <p class="description">{{vm.main.description}}</p>
+                </div>
+            </div><!-- end .row.desc -->
+            <div class="row main">
+                <div class="info col-lg-3 col-md-3 col-xs-12">
+                    <i class="icon owf owf-{{vm.main.weatherId}}-{{vm.main.dayOrNight}}" tooltip="{{vm.main.description}}"></i>
+                    <span class="current">{{vm.main.temp.current}}
+                        <span class="unit">{{vm.unit.temp.symbol}}</span>
+                    </span>                            
+                </div><!-- end .info -->
+                <div class="details col-lg-9 col-md-9 col-xs-12">
+                    <div class="precip" title="Precipitation">
+                        <label>Precipitation</label>
+                        {{vm.precip.value}} {{vm.unit.precip.symbol}}
+                    </div>
+                    <div class="humid" title="humidity">
+                        <label>Humidity</label>
+                        {{vm.humidity.value}}{{vm.unit.humidity.symbol}}
+                    </div>
+                    <div class="wind" title="Wind">
+                        <label>Wind</label>
+                        {{vm.wind.value}} {{vm.unit.wind.symbol}}
+                    </div>
+                </div><!-- end .details -->
+            </div><!-- end .row.main -->                    
+                
+            <div  class="row hidden-xs">
+                <div class="col-lg-3 col-md-3 hidden-xs" />
+                <div class="col-lg-9 col-md-9 col-xs-12"> 
+                    <span class="min" title="Minimum">
+                        <label>Min</label>
+                        <span class="min">
+                            {{vm.main.temp.min}}
+                            <span class="unit">{{vm.unit.temp.symbol}}</span>
+                        </span>                
+                    </span>
+                    <span class="max" title="Maximum">
+                        <label>Max</label>
+                        <span class="max">
+                            {{vm.main.temp.max}}
+                            <span class="unit">{{vm.unit.temp.symbol}}</span>
+                        </span>
+                    </span>
+                </div>                            
+            </div><!-- end .hidden-xs -->
+        </div><!-- end .well -->                        
+    </div><!-- end .panel-body -->
+</div><!-- end .dailyForcast.panel -->
