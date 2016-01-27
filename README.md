@@ -1,2 +1,2 @@
 # weatherNg
-A Angular.js Getting Started Tutorial
+An Angular.js Getting Started Workshop
