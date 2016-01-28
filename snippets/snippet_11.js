@@ -1,4 +1,4 @@
-/* forecast.html */
+/* app/forecast/forecast.html */
 
 /*
 <!-- add to bottom of forecast.html -->
@@ -20,7 +20,7 @@
 </div>
 */
 
-/* forecast.controller.js */
+/* app/forecast/forecast.controller.js */
 
 // Add this dummy data to the cottom of the forecast controller
 var forecast = {

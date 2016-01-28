@@ -1,4 +1,4 @@
-/* wether.service.js */
+/* app/components/weatherService/wether.service.js */
 
 (function() {
   'use strict';
@@ -104,15 +104,15 @@
 
   angular
     .module('weather')
-    .controller('ForecastController', ForeastController);
+    .controller('ForecastController', ForecastController);
 
   /** @ngInject */
   function ForecastController($log, weatherService) {  //inject weatherService into the controller
     var vm = this;                 
     
-    // call getTodaysForcast on the weatherService            
+    // call getTodaysForecast on the weatherService            
     weatherService.getTodaysForecast().then(function(response){            
-        $log.debug('todaysForcast', response);
+        $log.debug('todaysForecast', response);
         // map the data
         vm.city = response.city;
         vm.main = response.main;

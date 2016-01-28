@@ -1,0 +1,50 @@
+$borderColor: #cccccc;
+$boxShadowColor: #cecece;
+
+body
+{
+    padding: 15px;
+} 
+
+.location-group {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+    button {
+        height: 34px;
+    }
+}
+
+.btn-group.unit {
+    float: right;
+    margin-top: -5px;
+}
+
+.dailyForcast {
+    border: 1px solid $borderColor;
+    box-shadow: 0 0 8px $boxShadowColor;    
+    
+    .panel-title {
+        font-size: 16pt; 
+    }
+    
+    .panel-body {
+        padding-top: 0;
+        padding-bottom: 0;
+        
+        .time {
+            margin: 0;
+        }
+        
+        .icon {
+            font-size: 64px;
+        }
+        
+        .current {
+            font-size: 32px;
+            top: -20px;
+            margin-left: 10px;
+            position: relative;
+        }   
+    }       
+}

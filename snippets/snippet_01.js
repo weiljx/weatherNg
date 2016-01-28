@@ -1,4 +1,4 @@
-/* index.route.js */
+/* src/app/index.route.js */
 
 (function() {
   'use strict';
@@ -22,7 +22,7 @@
       })
       /* END COPY */
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/forecast'
       });
   }
 

@@ -1,4 +1,4 @@
-/* weatherTile.html */
+/* app/components/weatherTile.html */
 
 /*
 <div class="weatherTile">
@@ -48,7 +48,7 @@
 </div>
 */
 
-/* weatherTile.scss */
+/* app/components/weatherTile.scss */
 
 /*
 
@@ -120,7 +120,7 @@ $borderColor: #cccccc;
 
 */
 
-/* weatherTile.directive.js */
+/* app/components/weatherTile.directive.js */
 
 (function () {
     "use strict";

@@ -30,9 +30,9 @@
     
     vm.getForecast = function(){
         
-        // call getTodaysForcast on the weatherService - notice we now pass a location            
+        // call getTodaysForecast on the weatherService - notice we now pass a location            
         weatherService.getTodaysForecast(vm.location).then(function(response){            
-            $log.debug('todaysForcast', response);
+            $log.debug('todaysForecast', response);
             // map the data
             vm.city = response.city;
             vm.main = response.main;

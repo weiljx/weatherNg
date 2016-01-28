@@ -1,4 +1,4 @@
-/* weather.service.js */
+/* app/components/weatherService/weather.service.js */
 
 // add this method to the service and expose it
 var getWeeklyForecast = function(query){
@@ -42,10 +42,10 @@ var getWeeklyForecast = function(query){
 
 };
 
-/* forecast.controller.js */
+/* app/forecast/forecast.controller.js */
 
 // Add this at the end of the getForecast() method
 weatherService.getWeeklyForecast(vm.location).then(function(response){
-	$log.debug('weeklyForcast', response);
+	$log.debug('weeklyForecast', response);
 	vm.weeklyForecast = response;
 });

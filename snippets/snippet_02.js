@@ -1,4 +1,4 @@
-/* forecast.controller.js */
+/* app/forecast/forecast.controller.js */
 
 (function() {
   'use strict';
